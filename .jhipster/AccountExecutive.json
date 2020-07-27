@@ -1,0 +1,45 @@
+{
+  "name": "AccountExecutive",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apellido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "celular",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "repcom1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "repcom2",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200727152020",
+  "entityTableName": "account_executive",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
