@@ -1,0 +1,48 @@
+entity Segmento {
+  Id  Long required,
+  descripcion  String,
+  valor String
+}
+
+entity Region {
+  Id  Long required,
+  descripcion  String,
+  valor String
+  
+}
+entity AccExec {
+  Id  Long required,
+  nombre  String,
+  apellido  String,
+  telefono  String,
+  celular  String,  
+  mail  String,
+  repcom1  String,
+  repcom2  String
+  
+}
+
+relationship ManyToMany {
+	AccExec{Region} to Region{AccExec}
+}
+
+relationship OneToMany {
+	AccExec{Segmento} to Segmento
+}
+
+
+
+
+
+
+// Set pagination options
+paginate  Segmento, Region, AccExec with pagination
+
+filter  Segmento, Region, AccExec
+
+
+service all with serviceImpl
+ 
+
+
+// angularSuffix * with mySuffi
